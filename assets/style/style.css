@@ -2,6 +2,7 @@
   --top-main: #1b72e8;
   --campanella: #ff8f00;
   --link: #f26551;
+  --menu-left: #051e34;
 }
 
 .debug {
@@ -12,17 +13,29 @@
 header {
   height: 70px;
 }
+
 .d-flex.align-items-center.debug {
   height: 70px;
 }
-body{
-font-family: 'roboto'sans-serif;
+
+body {
+  font-family: 'roboto' sans-serif;
 }
 
-.menu-container{
-max-width: 150px;
-margin: 0 auto;
+main {
+  height: 95vh;
 }
+
+.menu-container {
+  max-width: 150px;
+  padding: 25px;
+  height: 100%;
+  color: white;
+  background-image: url(../img/sidebar-bg.png);
+  width: 100%;
+  background-color: var(--menu-left);
+}
+
 /* header */
 /* generali */
 
@@ -45,45 +58,75 @@ margin: 0 auto;
 
 /* /logo */
 /* search */
-.search{
-border-radius: 5px;
-background-color: lightgray;
+.search {
+  border-radius: 5px;
+  background-color: lightgray;
 }
-.search .lente i{
-font-size: 15px;
-padding: 5px;
+
+.search .lente i {
+  font-size: 15px;
+  padding: 5px;
 }
-.search .search-text input{
-width: 100%;
-padding: 5px;
-background-color: lightgrey;
-border: white;
-margin-right: 5px;
+
+.search .search-text input {
+  width: 100%;
+  padding: 5px;
+  background-color: lightgrey;
+  border: white;
+  margin-right: 5px;
 }
 
 /* /search */
 /* notifiche */
-.notifiche .altro{
-width: 112.5px;
+.notifiche .altro {
+  width: 112.5px;
 }
-.notifiche .campanella{
-width: 37.5px;
+
+.notifiche .campanella {
+  width: 37.5px;
 }
-.notifiche .altro i{
-padding: 10px;
-font-size: 20px;
+
+.notifiche .altro i {
+  padding: 10px;
+  font-size: 20px;
 }
-.notifiche .campanella i{
-font-size: 20px;
-padding: 10px;
-color: var(--campanella);
+
+.notifiche .campanella i {
+  font-size: 20px;
+  padding: 10px;
+  color: var(--campanella);
 }
+
 /* /notifiche */
 
 /* /header */
 
 /* main */
+
+/* main left */
+.main-left {
+  height: 100%;
+}
+
+.menu-container .icon-text {
+  margin-left: 25px;
+}
+.menu .home,
+.stats,
+.signals{
+margin-bottom: 15px;
+
+}
+/* /main left */
+
 /* /main */
 
 /* footer */
 /* /footer */
+
+/* responsive */
+@media screen and (max-width:991px) {
+  .menu-container {
+    width: 80px;
+  }
+}

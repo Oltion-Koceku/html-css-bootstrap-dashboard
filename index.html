@@ -54,17 +54,32 @@
   <main>
     <!-- menu -->
     <section class="main-left">
-      <div class="menu-container d-flex flex-column">
-        <div class="menu d-flex flex-column justify-content-between">
-          <div class="home"></div>
-          <div class="stats"></div>
-          <div class="signals"></div>
+      <div class="menu-container d-flex flex-column justify-content-between  debug">
+        <div class="menu d-flex flex-column justify-content-between debug">
+          <div class="home d-flex justify-content-center  debug">
+            <div class="icon"><i class="fa-solid fa-house"></i></div>
+            <div class="icon-text d-none d-lg-block">Home</div>
+          </div>
+          <div class="stats d-flex justify-content-center debug">
+            <div class="icon"><i class="fa-solid fa-chart-simple"></i></div>
+            <div class="icon-text d-none d-lg-block">Stats</div>
+          </div>
+          <div class="signals d-flex justify-content-center debug">
+            <div class="icon"><i class="fa-solid fa-signal"></i></div>
+            <div class="icon-text d-none d-lg-block">Signals</div>
+          </div>
         </div>
-        <div class="setting-menu"></div>
+
+        <div class="setting-menu debug">
+          <div class="home d-flex justify-content-center  debug">
+            <div class="icon"><i class="fa-solid fa-gear"></i></div>
+            <div class="icon-text d-none d-lg-block">Admin</div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- /menu -->
-  <section class="main-right"></section>
+  <section class="main-right debug"></section>
   </main>
 
   <footer></footer>
