@@ -3,6 +3,7 @@
   --campanella: #ff8f00;
   --link: #f26551;
   --menu-left: #051e34;
+  --app: #165bba;
 }
 
 .debug {
@@ -34,6 +35,10 @@ main {
   background-image: url(../img/sidebar-bg.png);
   width: 100%;
   background-color: var(--menu-left);
+}
+
+.container-ol {
+  margin: 15px;
 }
 
 /* header */
@@ -111,20 +116,73 @@ main {
 .menu-container .icon-text {
   margin-left: 25px;
 }
+
 .menu .home,
 .stats,
-.signals{
-margin-bottom: 15px;
+.signals {
+  margin-bottom: 15px;
 
 }
-/* /main left */
 
+/* /main left */
+/* main right */
+.main-right {
+  overflow: scroll;
+
+}
+
+/* top main */
+.top-main {
+  height: 260px;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--top-main);
+}
+.top-main h3{
+font-size: 20px;
+}
+.studente .plus{
+border: 1px solid white;
+padding: 5px 10px;
+border-radius: 7px;
+}
+
+.studente .plus i{
+font-size: 20px;
+}
+
+.boolean .blaze .piano{
+border-radius: 15px;
+background-color: var(--app);
+text-align: center;
+}
+.boolean .blaze .piano a{
+padding: 5px 10px;
+color: white;
+}
+/* /top main */
+
+/* /main right */
 /* /main */
 
 /* footer */
 /* /footer */
 
 /* responsive */
+@media screen and (min-width:767px) {
+
+  .top-main .studente {
+    height: 40%;
+    align-items: center;
+    width: 300px;
+  }
+  
+  .top-main .boolean{
+  width: 270px;
+  }
+  
+}
+
 @media screen and (max-width:991px) {
   .menu-container {
     width: 80px;
