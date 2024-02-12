@@ -21,6 +21,7 @@
 <body>
 
   <header class="d-flex align-items-center debug">
+    <!-- logo -->
     <div class="logo debug h-100 ">
       <div class="logo-uno d-lg-none h-100 d-flex ">
         <img src="assets/img/mobile-logo.png" alt="">
@@ -29,20 +30,41 @@
         <img class="w-100 ps-2" src="assets/img/logo.svg" alt="">
       </div>
     </div>
+    <!-- /logo -->
+    <!-- cerca -->
     <div class="search debug d-flex w-100 m-2 ">
-      <div class="lente"><i class="fa-solid fa-magnifying-glass"></i></div>
+      <div class="lente d-flex align-items-center justify-content-center"><i class="fa-solid fa-magnifying-glass"></i></div>
       <div class="search-text w-100 d-flex align-items-center "><input class="w-100" placeholder="Prova a cercare: Lezioni di Laravel" type="search" ></div>
     </div>
-    <div class="notifiche debug h-100 ">
-      <div class="altro d-none d-lg-flex d-flex align-items-center h-100">
-
+    <!-- /cerca -->
+    <!-- notifiche -->
+    <div class="notifiche debug h-100 d-flex ">
+      <div class="altro d-none d-lg-flex d-flex align-items-center justify-content-between  h-100">
+        <i class="fa-solid fa-list-ul"></i>
+        <i class="fa-solid fa-circle-question"></i>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
       </div>
-      <div class="campanella h-100 "></div>
+      <div class="campanella h-100 d-flex align-items-center justify-content-end ">
+        <i class="fa-solid fa-bell"></i>
+      </div>
     </div>
+    <!-- /notifiche -->
   </header>
 
   <main>
-  
+    <!-- menu -->
+    <section class="main-left">
+      <div class="menu-container d-flex flex-column">
+        <div class="menu d-flex flex-column justify-content-between">
+          <div class="home"></div>
+          <div class="stats"></div>
+          <div class="signals"></div>
+        </div>
+        <div class="setting-menu"></div>
+      </div>
+    </section>
+    <!-- /menu -->
+  <section class="main-right"></section>
   </main>
 
   <footer></footer>
