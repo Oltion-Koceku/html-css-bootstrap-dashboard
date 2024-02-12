@@ -20,42 +20,25 @@
 </head>
 <body>
 
-  <header>
-
-    <div class="top-header d-flex ">
-      <!-- logo -->
-      <div class="logo debug d-flex
-       ">
-        <div class="logo-img d-lg-none debug">
-          <img class=" " src="assets/img/mobile-logo.png" alt="">
-        </div>
-        <div class="logo-scritta d-none d-lg-block debug">
-          <img src="assets/img/logo.svg" alt="">
-        </div>
+  <header class="d-flex align-items-center debug">
+    <div class="logo debug h-100 ">
+      <div class="logo-uno d-lg-none h-100 d-flex ">
+        <img src="assets/img/mobile-logo.png" alt="">
       </div>
-      <!-- /logo -->
-      <!-- search -->
-      <div class="search debug w-100 d-flex align-items-center ">
-        <div class="lente debug">
-          <i class="fa-solid fa-magnifying-glass "></i>
-        </div>
-        <div class="search-text debug w-100 ">
-          <input class="w-100" type="text">
-        </div>
+      <div class="logo-due d-none d-lg-flex d-flex align-items-center h-100 ">
+        <img class="w-100 ps-2" src="assets/img/logo.svg" alt="">
       </div>
-      <!-- /serarch -->
-      <!-- Notifiche -->
-      <div class="notifiche debug d-flex ">
-        <div class="altro d-none d-lg-block debug">
-          altro
-        </div>
-        <div class="campanella debug">
-          campanella
-        </div>
-      </div>
-      <!-- /Notifiche -->
     </div>
-  
+    <div class="search debug d-flex w-100 m-2 ">
+      <div class="lente"><i class="fa-solid fa-magnifying-glass"></i></div>
+      <div class="search-text w-100 d-flex align-items-center "><input class="w-100" placeholder="Prova a cercare: Lezioni di Laravel" type="search" ></div>
+    </div>
+    <div class="notifiche debug h-100 ">
+      <div class="altro d-none d-lg-flex d-flex align-items-center h-100">
+
+      </div>
+      <div class="campanella h-100 "></div>
+    </div>
   </header>
 
   <main>
