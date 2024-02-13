@@ -13,9 +13,8 @@
 
 header {
   height: 70px;
-  overflow: hidden;
   width: 100%;
-  
+
 }
 
 .d-flex.align-items-center.debug {
@@ -28,7 +27,7 @@ body {
 
 main {
   height: calc(100vh - 70px);
-  
+
 }
 
 .menu-container {
@@ -45,9 +44,11 @@ main {
 .container-ol {
   margin: 15px;
 }
-.lg-container{
-width: 50%;
+
+.lg-container {
+  width: 50%;
 }
+
 /* header */
 /* generali */
 
@@ -97,18 +98,17 @@ width: 50%;
 .notifiche .campanella {
   width: 37.5px;
 }
-.notifiche .campanella .dropdown ul li{
-z-index: 999;
 
-}
 .notifiche .altro i {
   padding: 10px;
   font-size: 20px;
 }
-.notifiche .campanella button{
-background-color: white;
-border: none;
+
+.notifiche .campanella button {
+  background-color: white;
+  border: none;
 }
+
 .notifiche .campanella i {
   font-size: 20px;
   color: var(--campanella);
@@ -124,12 +124,14 @@ border: none;
 .main-left {
   height: 100%;
 }
+
 .menu-container .home:hover,
 .stats:hover,
 .signals:hover,
-.setting-menu:hover{
-background-color: rgba(239, 239, 240,0.3);
+.setting-menu:hover {
+  background-color: rgba(239, 239, 240, 0.3);
 }
+
 .menu-container .icon-text {
   margin-left: 25px;
 }
@@ -155,69 +157,75 @@ background-color: rgba(239, 239, 240,0.3);
   padding: 15px;
   background-color: var(--top-main);
 }
-.top-main h3{
-font-size: 20px;
+
+.top-main h3 {
+  font-size: 20px;
 }
 
-.app{
-align-items: center;
-margin-bottom: 20px;
+.app {
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.studente .plus{
-border: 1px solid white;
-border-radius: 7px;
-}
-.studente .plus .offcanvas{
-width: 100%;
-}
-.studente .plus i{
-font-size: 20px;
+.studente .plus {
+  border: 1px solid white;
+  border-radius: 7px;
 }
 
-.boolean .piano{
-border-radius: 15px;
-background-color: var(--app);
-padding: 0 7px;
-}
-.boolean .piano a{
-text-decoration: none;
-color: white;
+.studente .plus .offcanvas {
+  width: 100%;
 }
 
-.boolean .app .piano:nth-child(3){
-border-radius: 50%;
+.studente .plus i {
+  font-size: 20px;
+}
+
+.boolean .piano {
+  border-radius: 15px;
+  background-color: var(--app);
+  padding: 0 7px;
+}
+
+.boolean .piano a {
+  text-decoration: none;
+  color: white;
+}
+
+.boolean .app .piano:nth-child(3) {
+  border-radius: 50%;
 }
 
 /* /top main */
 
 /* Tabelle */
-.table-left .link{
+.table-left .link {
   background-color: #f3725f;
   border-radius: 50%;
   width: 30px;
   height: 30px;
   color: white;
-  }
-  
-  .table-left th{
+}
+
+.table-left th {
   height: 60px;
   line-height: px;
-  }
-  
-  .table-left .btn.btn-light {
-    margin-left: 2px;
-    border: 1px solid gray;
-  }
-  .table-right{
+}
+
+.table-left .btn.btn-light {
+  margin-left: 2px;
+  border: 1px solid gray;
+}
+
+.table-right {
   height: 700px;
-  }
-  .table-right .card.ol-h{
+}
+
+.table-right .card.ol-h {
   height: 270px;
-  }
+}
 
 
-  
+
 /* /Tabelle */
 
 /* /main right */
@@ -229,8 +237,8 @@ border-radius: 50%;
 /* responsive */
 @media screen and (min-width:767px) {
 
-  .top-main{
-  height: 175px;
+  .top-main {
+    height: 175px;
   }
 
   .top-main .studente {
@@ -238,32 +246,34 @@ border-radius: 50%;
     align-items: center;
     width: 300px;
   }
-  
-  .boolean{
-  width: 50%;
+
+  .boolean {
+    width: 50%;
   }
- 
-  .app{
+
+  .app {
     margin-top: 20px;
-    }
-    
+  }
+
 }
 
 @media screen and (min-width:1200px) {
+
   /* tabelle */
-  .studente .plus .offcanvas{
+  .studente .plus .offcanvas {
     width: 50% !important;
-    }
+  }
+
   /* tabelle */
 }
+
 @media screen and (max-width:991px) {
   .menu-container {
     width: 80px;
   }
 
   /* tabelle */
-  .studente .plus .offcanvas{
-    width: 50% !important;
-    }
+  
+
   /* tabelle */
 }
