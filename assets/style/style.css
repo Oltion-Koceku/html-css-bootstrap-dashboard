@@ -173,6 +173,25 @@ border-radius: 50%;
 
 /* /top main */
 
+/* Tabelle */
+.table-left .link{
+  background-color: #f3725f;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  }
+  
+  .table-left th{
+  height: 60px;
+  line-height: px;
+  }
+  
+  .table-left .btn.btn-light {
+    margin-left: 2px;
+    border: 1px solid gray;
+  }
+/* /Tabelle */
+
 /* /main right */
 /* /main */
 
