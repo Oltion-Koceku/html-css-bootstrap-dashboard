@@ -17,6 +17,10 @@ header {
 
 }
 
+input:focus-visible{
+outline: none;
+}
+
 .d-flex.align-items-center.debug {
   height: 70px;
 }
