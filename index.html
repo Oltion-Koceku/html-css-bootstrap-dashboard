@@ -19,10 +19,10 @@
   <title>Bootstrap Dashboard</title>
 </head>
 <body>
-
-  <header class="d-flex align-items-center debug">
+vew
+  <header class="d-flex align-items-center ">
     <!-- logo -->
-    <div class="logo debug h-100 ">
+    <div class="logo  h-100 ">
       <div class="logo-uno d-lg-none h-100 d-flex ">
         <img src="assets/img/mobile-logo.png" alt="">
       </div>
@@ -32,13 +32,13 @@
     </div>
     <!-- /logo -->
     <!-- cerca -->
-    <div class="search debug d-flex w-100 m-2 ">
+    <div class="search  d-flex w-100 m-2 ">
       <div class="lente d-flex align-items-center justify-content-center"><i class="fa-solid fa-magnifying-glass"></i></div>
       <div class="search-text w-100 d-flex align-items-center "><input class="w-100" placeholder="Prova a cercare: Lezioni di Laravel" type="search" ></div>
     </div>
     <!-- /cerca -->
     <!-- notifiche -->
-    <div class="notifiche debug h-100 d-flex ">
+    <div class="notifiche  h-100 d-flex ">
       <div class="altro d-none d-lg-flex d-flex align-items-center justify-content-between  h-100">
         <i class="fa-solid fa-list-ul"></i>
         <i class="fa-solid fa-circle-question"></i>
@@ -54,24 +54,24 @@
   <main class="d-flex">
     <!-- menu -->
     <section class="main-left">
-      <div class="menu-container d-flex flex-column justify-content-between  debug">
-        <div class="menu d-flex flex-column justify-content-between debug">
-          <div class="home d-flex justify-content-center  debug">
+      <div class="menu-container d-flex flex-column justify-content-between  ">
+        <div class="menu d-flex flex-column justify-content-between ">
+          <div class="home d-flex justify-content-center  ">
             <div class="icon"><i class="fa-solid fa-house"></i></div>
             <div class="icon-text d-none d-lg-block">Home</div>
           </div>
-          <div class="stats d-flex justify-content-center debug">
+          <div class="stats d-flex justify-content-center ">
             <div class="icon"><i class="fa-solid fa-chart-simple"></i></div>
             <div class="icon-text d-none d-lg-block">Stats</div>
           </div>
-          <div class="signals d-flex justify-content-center debug">
+          <div class="signals d-flex justify-content-center ">
             <div class="icon"><i class="fa-solid fa-signal"></i></div>
             <div class="icon-text d-none d-lg-block">Signals</div>
           </div>
         </div>
 
-        <div class="setting-menu debug">
-          <div class="home d-flex justify-content-center  debug">
+        <div class="setting-menu ">
+          <div class="home d-flex justify-content-center  ">
             <div class="icon"><i class="fa-solid fa-gear"></i></div>
             <div class="icon-text d-none d-lg-block">Admin</div>
           </div>
@@ -82,20 +82,98 @@
 
     </section>
     <!-- /menu -->
-  <section class="main-right debug w-100 ">
-      <div class="top-main debug d-md-flex flex-lg-row justify-content-between ">
+  <section class="main-right  w-100 ">
+      <div class="top-main  d-md-flex flex-lg-row justify-content-between ">
         <!-- Nuovo studente -->
-        <div class="studente d-flex align-items-center  order-md-3 debug">
+        <div class="studente d-flex align-items-center  order-md-3 ">
           <div class="nuovo"><h3>Nuovo Studente</h3></div>
-          <div class="plus ms-3 "><a href="#"><i class="fa-solid fa-plus text-white "></i></a></div>
+          <div class="plus ms-3 ">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><a href="#"><i class="fa-solid fa-plus text-white "></i></a></button>
+	
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"              aria-labelledby="offcanvasRightLabel">
+              	<div class="offcanvas-header">
+              		<h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+              		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              	</div>
+              	<div class="offcanvas-body">
+              		<form class="row g-3">
+              			<div class="col-md-6">
+              				<label for="inputEmail4" class="form-label">Nome</label>
+              				<input type="email" class="form-control" id="inputEmail4">
+              			</div>
+              			<div class="col-md-6">
+              				<label for="inputPassword4" class="form-label">Cognome</label>
+              				<input type="password" class="form-control" id="inputPassword4">
+              			</div>
+              			<div class="col-md-6">
+              				<label for="inputEmail4" class="form-label">Email</label>
+              				<div class="a d-flex align-items-center">
+              					<div>
+              						<i class="fa-solid fa-at"></i>
+              					</div>
+              					<input type="email" class="form-control" id="inputEmail4">
+              				</div>
+              			</div>
+              			<div class="col-md-6">
+              				<label for="inputPassword4" class="form-label">Password</label>
+              				<input type="password" class="form-control" id="inputPassword4">
+              			</div>
+              			<div class="col-md-6">
+              				<label for="inputEmail4" class="form-label">Indirizzo Email</label>
+              				<div class="a d-flex align-items-center">
+              					<div>
+              						<i class="fa-solid fa-at"></i>
+              					</div>
+              					<input type="email" class="form-control" id="inputEmail4">
+              				</div>
+              			</div>
+              			<div class="col-md-6">
+              				<label for="inputPassword4" class="form-label">Password</label>
+              				<input type="password" class="form-control" id="inputPassword4">
+              			</div>
+              			<div class="col-12">
+              				<label for="inputAddress" class="form-label">Indirizzo</label>
+              				<input type="text" class="form-control" id="inputAddress">
+              			</div>
+              			<div class="col-md-6">
+              				<label for="inputCity" class="form-label">Citta</label>
+              				<input type="text" class="form-control" id="inputCity">
+              			</div>
+              			<div class="col-md-4">
+              				<label for="inputState" class="form-label">Stato</label>
+              				<select id="inputState" class="form-select">
+              					<option selected>Scegli</option>
+              					<option>...</option>
+              				</select>
+              			</div>
+              			<div class="col-md-2">
+              				<label for="inputZip" class="form-label">	CAP</label>
+              				<input type="text" class="form-control" id="inputZip">
+              			</div>
+              			<div class="col-12">
+              				<div class="form-check">
+              					<input class="form-check-input" type="checkbox" id="gridCheck">
+              					<label class="form-check-label" for="gridCheck">
+              						Seleziona per proseguire
+              					</label>
+              				</div>
+              			</div>
+              			<div class="col-12">
+              				<button type="submit" class="btn btn-primary">Salva</button>
+              				<button type="reset" class="btn btn-warning">Svuota</button>
+              			</div>
+              		</form>
+              	</div>
+              </div>
+          </div>
         </div>
         <!-- Nuovo studente -->
-        <div class="boolean debug">
+        <div class="boolean ">
           <div class="blaze d-flex align-items-center">
             <h2>Boolean</h2>
             <div class="piano ms-3"><a class="text-decoration-none " href="#">Piano Blaze</a></div>
           </div>
-          <div class="app d-flex flex-wrap debug">
+          <div class="app d-flex flex-wrap ">
             <div class="piano"><a href="#">3 app</a></div>
             <i class="fa-solid fa-angles-right"></i>
             <div class="piano d-lg-none d-flex align-items-center justify-content-center"><a class="" href="#"><i class="fa-solid fa-plus"></i></a></div>
@@ -105,7 +183,7 @@
           </div>
         </div>
         <!-- online -->
-        <div class="online debug w-md-50">
+        <div class="online  w-md-50">
           <h3>Studenti Online negli ultimi 30 minuti</h3>
           <h2>125</h2>
         </div>
@@ -121,7 +199,7 @@
                   <div class="card-header">
                      <h2>Prossime classi</h2>
                   </div>
-                  <ul class="list-group list-group-flush p-2 ">
+                  <ul class="list-group list-group-flush p-3 ">
                     <table class="table table-hover ">
                       <thead>
                         <tr>
@@ -226,11 +304,11 @@
                     </table>
                   </ul>
                 </div>
-                <div class="card w-100 mt-3" style="width: 18rem;">
+                <div class="card w-100 mt-3 " style="width: 18rem;">
                   <div class="card-header">
                     <h2>F.A.Q.</h2>
                   </div>
-                  <ul class="list-group list-group-flush">
+                  <ul class="list-group list-group-flush p-3 ">
                     <div class="accordion" id="accordionPanelsStayOpenExample">
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
