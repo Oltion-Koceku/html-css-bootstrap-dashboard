@@ -141,6 +141,12 @@ main {
 .top-main h3{
 font-size: 20px;
 }
+
+.app{
+align-items: center;
+margin-bottom: 20px;
+}
+
 .studente .plus{
 border: 1px solid white;
 padding: 5px 10px;
@@ -154,21 +160,17 @@ font-size: 20px;
 .boolean .piano{
 border-radius: 15px;
 background-color: var(--app);
+padding: 0 7px;
 }
 .boolean .piano a{
-padding: 5px 10px;
+text-decoration: none;
 color: white;
-}
-.boolean .piano a i{
-font-size: 10px;
-width: 100%;
-height: 100%;
 }
 
 .boolean .app .piano:nth-child(3){
 border-radius: 50%;
-width: 34px;
 }
+
 /* /top main */
 
 /* /main right */
@@ -180,15 +182,24 @@ width: 34px;
 /* responsive */
 @media screen and (min-width:767px) {
 
+  .top-main{
+  height: 175px;
+  }
+
   .top-main .studente {
     height: 40%;
     align-items: center;
     width: 300px;
   }
   
-  .top-main .boolean{
-  width: 320px;
+  .boolean{
+  width: 50%;
   }
+ 
+  .app{
+    margin-top: 20px;
+    }
+    
   
 }
 
