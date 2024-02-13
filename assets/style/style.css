@@ -13,6 +13,8 @@
 
 header {
   height: 70px;
+  overflow: hidden;
+  width: 100%;
 }
 
 .d-flex.align-items-center.debug {
@@ -25,6 +27,7 @@ body {
 
 main {
   height: 95vh;
+  
 }
 
 .menu-container {
@@ -40,7 +43,9 @@ main {
 .container-ol {
   margin: 15px;
 }
-
+.lg-container{
+width: 50%;
+}
 /* header */
 /* generali */
 
@@ -190,6 +195,15 @@ border-radius: 50%;
     margin-left: 2px;
     border: 1px solid gray;
   }
+  .table-right{
+  height: 700px;
+  }
+  .table-right .card.ol-h{
+  height: 270px;
+  }
+
+
+  
 /* /Tabelle */
 
 /* /main right */
@@ -226,4 +240,8 @@ border-radius: 50%;
   .menu-container {
     width: 80px;
   }
+
+  /* tabelle */
+
+  /* tabelle */
 }
