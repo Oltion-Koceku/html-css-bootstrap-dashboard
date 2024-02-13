@@ -27,14 +27,14 @@ body {
 }
 
 main {
-  height: 100vh;
+  height: calc(100vh - 70px);
   
 }
 
 .menu-container {
   max-width: 150px;
   padding: 25px;
-  height: 93%;
+  height: 100%;
   color: white;
   background-image: url(../img/sidebar-bg.png);
   width: 100%;
@@ -97,15 +97,20 @@ width: 50%;
 .notifiche .campanella {
   width: 37.5px;
 }
+.notifiche .campanella .dropdown ul li{
+z-index: 999;
 
+}
 .notifiche .altro i {
   padding: 10px;
   font-size: 20px;
 }
-
+.notifiche .campanella button{
+background-color: white;
+border: none;
+}
 .notifiche .campanella i {
   font-size: 20px;
-  padding: 10px;
   color: var(--campanella);
 }
 
@@ -192,6 +197,7 @@ border-radius: 50%;
   border-radius: 50%;
   width: 30px;
   height: 30px;
+  color: white;
   }
   
   .table-left th{
@@ -241,7 +247,6 @@ border-radius: 50%;
     margin-top: 20px;
     }
     
-  
 }
 
 @media screen and (min-width:1200px) {

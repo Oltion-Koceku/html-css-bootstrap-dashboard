@@ -19,7 +19,7 @@
   <title>Bootstrap Dashboard</title>
 </head>
 <body>
-vew
+
   <header class="d-flex align-items-center ">
     <!-- logo -->
     <div class="logo  h-100 ">
@@ -44,8 +44,17 @@ vew
         <i class="fa-solid fa-circle-question"></i>
         <i class="fa-solid fa-ellipsis-vertical"></i>
       </div>
-      <div class="campanella h-100 d-flex align-items-center justify-content-end ">
-        <i class="fa-solid fa-bell"></i>
+      <div class="campanella">
+        <div class="dropdown">
+          <button class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-bell"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end ">
+            <li><button class="dropdown-item" type="button">Profilo</button></li>
+            <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+            <li><button class="dropdown-item" type="button">Logout</button></li>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- /notifiche -->
@@ -78,7 +87,6 @@ vew
         </div>
       </div>
     </section>
-    <section class="main-right">
 
     </section>
     <!-- /menu -->
@@ -92,7 +100,7 @@ vew
 	
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"              aria-labelledby="offcanvasRightLabel">
               	<div class="offcanvas-header">
-              		<h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+              		<h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
               		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               	</div>
               	<div class="offcanvas-body">
@@ -385,7 +393,7 @@ vew
                 <div class="card w-100 h-100  p-3 mt-3" style="width: 18rem;">
                   <ul class="list-group list-group-flush h-100 ">
                     <div class="card w-100 h-100 " style="width: 18rem;">
-                      <ul class="list-group list-group-flush">
+                      <ul class="list-group list-group-flush h-100 d-flex">
                         <li class="list-group-item">
                           <div class="img-utenti w-100 "><img class="w-100" src="assets/img/stats.jpeg" alt=""></div>
                           <h3>Utenti attivi</h3>
